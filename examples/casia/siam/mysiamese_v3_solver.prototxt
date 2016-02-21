@@ -1,5 +1,5 @@
 # The train/test net protocol buffer definition
-net: "mysiamese_v3_train_test.prototxt"
+net: "mysiamese_v3_train_test_simple.prototxt"
 # test_iter specifies how many forward passes the test should carry out.
 # In the case of MNIST, we have test batch size 100 and 100 test iterations,
 # covering the full 10,000 testing images.
@@ -7,7 +7,11 @@ test_iter: 100
 # Carry out testing every 500 training iterations.
 test_interval: 500
 # The base learning rate, momentum and the weight decay of the network.
+<<<<<<< HEAD
 base_lr: 0.0001
+=======
+base_lr: 0.001
+>>>>>>> acce4d378ea41bf47b60da5b37b6fabdefb63497
 momentum: 0.9
 #solver_type: ADAGRAD
 weight_decay: 0.01
